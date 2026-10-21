@@ -1,0 +1,38 @@
+{
+  "name": "shaderplayground",
+  "version": "1.0.0",
+  "description": "This is a GLSL shader playground",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amrutawade/ShaderPlayground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amrutawade/ShaderPlayground/issues"
+  },
+  "homepage": "https://github.com/amrutawade/ShaderPlayground#readme",
+  "dependencies": {
+    "lil-gui": "^0.21.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/three": "^0.186.0",
+    "css-loader": "^7.1.5",
+    "html-webpack-plugin": "^5.6.8",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.9.3",
+    "webpack": "^5.112.0",
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0"
+  }
+}
