@@ -29,19 +29,26 @@ renderer.outputColorSpace = THREE.SRGBColorSpace;
 document.body.appendChild(renderer.domElement);
 
 // Cricket ground background.
+
 const textureLoader = new THREE.TextureLoader();
 
-textureLoader.load(
+const groundTextureUrl = new URL(
   "/Narendra_Modi_Stadium.jpg",
+  document.baseURI
+).href;
+
+textureLoader.load(
+  groundTextureUrl,
   (texture) => {
     texture.colorSpace = THREE.SRGBColorSpace;
     scene.background = texture;
   },
   undefined,
   (error) => {
-    console.error("Failed to load cricket ground background", error);
+    console.error("Could not load Narendra_Modi_Stadium.jpg", error);
   }
 );
+
 
 // Sphere geometry.
 const geometry = new THREE.SphereGeometry(0.5, 128, 128);
